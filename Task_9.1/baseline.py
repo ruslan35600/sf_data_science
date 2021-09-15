@@ -27,7 +27,7 @@ if number <= count:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count < number <= count+10:
@@ -38,7 +38,7 @@ elif count < number <= count+10:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+10 < number <= count+20:
@@ -49,7 +49,7 @@ elif count+10 < number <= count+20:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+20 < number <= count+30:
@@ -60,7 +60,7 @@ elif count+20 < number <= count+30:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+30 < number <= count+40:
@@ -71,7 +71,7 @@ elif count+30 < number <= count+40:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+40 < number <= count+50:
@@ -82,7 +82,7 @@ elif count+40 < number <= count+50:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+50 < number <= count+60:
@@ -93,7 +93,7 @@ elif count+50 < number <= count+60:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+60 < number <= count+70:
@@ -104,7 +104,7 @@ elif count+60 < number <= count+70:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+70 < number <= count+80:
@@ -115,7 +115,7 @@ elif count+70 < number <= count+80:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 elif count+80 < number <= count+90:
@@ -126,7 +126,7 @@ elif count+80 < number <= count+90:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
         
         
 else number > 90:
@@ -137,5 +137,5 @@ else number > 90:
             count_func +=1
             if predict_number == number:
                 break
-    print (f'"Ваше число: " {predict_number} , "мы нашли его за: " {count_func} "попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
     
