@@ -16,126 +16,116 @@ import numpy as np
 number = np.random.randint(1, 101) # загадываем число
 
 s=0
-n=1
+n=0
 count = 10
 
 if number <= count:
     def predict_number(number):
         s = 0
-        count_func = n
+        n=0
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
-elif count < number <= count+10:
+             
+elif count < number <= count+20:
     def predict_number(number):
         s = 0
-        count_func = n+10
+        n = n+10
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
-        
-        
-elif count+10 < number <= count+20:
-    def predict_number(number):
-        s = 0
-        count_func = n+20
-        while True:
-            count_func +=1
-            if predict_number == number:
-                break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
 elif count+20 < number <= count+30:
     def predict_number(number):
         s = 0
-        count_func = n+30
+        n = n+20
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
 elif count+30 < number <= count+40:
     def predict_number(number):
         s = 0
-        count_func = n+40
+        n = n+30
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
 elif count+40 < number <= count+50:
     def predict_number(number):
         s = 0
-        count_func = n+50
+        n = n+40
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
 elif count+50 < number <= count+60:
     def predict_number(number):
         s = 0
-        count_func = n+60
+        n = n+50
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
 elif count+60 < number <= count+70:
     def predict_number(number):
         s = 0
-        count_func = n+70
+        n = n+60
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
 elif count+70 < number <= count+80:
     def predict_number(number):
         s = 0
-        count_func = n+80
+        n = n+70
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
 elif count+80 < number <= count+90:
     def predict_number(number):
         s = 0
-        count_func = n+90
+        n = n+80
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
         
         
-else number > 90:
+elif number > 90:
     def predict_number(number):
         s = 0
-        count_func = n+90
+        n = n+90
         while True:
-            count_func +=1
+            n +=1
             if predict_number == number:
                 break
-    print (f"Ваше число: {predict_number} , мы нашли его за: {count_func} попыток!")
+    print (f"Ваше число: {predict_number} , мы нашли его за: {n} попыток!")
     
