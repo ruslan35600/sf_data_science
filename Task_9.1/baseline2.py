@@ -42,4 +42,5 @@ def random_predict (number):
         
     print(f"Загаданное число было {predict_number}")
 
+print(number)
 random_predict (number)
