@@ -31,8 +31,10 @@ def random_predict (predict_number):
     
     
     while True: #Запускаем цикл поиска
-        predict_number += 1
         if predict_number == number:
+            break
+        else:
+            predict_number += 1
             break
         
         
