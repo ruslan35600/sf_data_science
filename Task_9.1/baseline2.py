@@ -1,8 +1,10 @@
 import numpy as np
 
+number = np.random.randint(1, 101)
 
-def random_predict (predict_number):
-    number = np.random.randint(1, 101)
+
+def random_predict (number):
+
     
     #Для начала разделим список из 100 чисел на 10
     if number <=10:
@@ -31,13 +33,13 @@ def random_predict (predict_number):
     
     
     while True: #Запускаем цикл поиска
-        if predict_number == number:
+        if predict_number != number:
+            predict_number += 1
             break
         else:
-            predict_number += 1
             break
         
         
     print(f"Загаданное число было {predict_number}")
 
-random_predict (predict_number)
+random_predict (number)
