@@ -1,32 +1,27 @@
 
+import numpy as np
 
-from random import randint
+
+number = np.random.randint(0, 101)
+
+def random_predict (number):
+    l = 0
+    r = 101
+    pre_number = -1
+    while True:
+        q = (l + r) // 2
+        if r[q] == number:
+            pre_number = q
+            break
+        elif r[q] > number:
+            r = q - 1
+        elif r[q] < number:
+            r = q + 1
+    return pre_number
+
+    
  
-# Создание списка,
-# его сортировка по возрастанию
-# и вывод на экран
-a = []
-for i in range(10):
-    a.append(randint(1, 50))
-a.sort()
-print(a)
- 
-# искомое число
-value = int(input())
- 
-mid = len(a) // 2
-low = 0
-high = len(a) - 1
- 
-while a[mid] != value and low <= high:
-    if value > a[mid]:
-        low = mid + 1
-    else:
-        high = mid - 1
-    mid = (low + high) // 2
- 
-if low > high:
-    print("No value")
-else:
-    print("ID =", mid)
+print(number)
+
+random_predict (pre_number)
 
