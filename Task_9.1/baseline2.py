@@ -1,46 +1,43 @@
+
+#Условия задания
+
+#Компьютер загадывает целое число от 1 до 100, и нам его нужно угадать. Под «угадать» подразумевается «написать программу, которая угадывает число».
+#Алгоритм учитывает информацию о том, больше ли или меньше случайное число нужного нам числа.
+#Представлен шаблон baseline из скринкаста.
+
+#Метрика качества
+
+#Результаты оцениваются по среднему количеству попыток при 10000 повторений. Необходимо добиться минимального количество попыток.
+
 import numpy as np
 
-number = np.random.randint(1, 101)
-
-
-def random_predict (number):
-
-    
-    #Для начала разделим список из 100 чисел на 10
-    if number <=10:
-        pre_number = range(1,11)
-    elif 10 < number <=20:
-        pre_number = range(11,21)
-    elif 20 < number <=30:
-        pre_number = range(21,31)
-    elif 30 < number <=40:
-        pre_number = range(31,41)
-    elif 40 < number <=50:
-        pre_number = range(41,51)
-    elif 50 < number <=60:
-        pre_number = range(51,61)
-    elif 60 < number <=70:
-        pre_number = range(61,71)
-    elif 70 < number <=80:
-        pre_number = range(71,81)
-    elif 80 < number <=90:
-        pre_number = range(81,91)
-    elif number > 90:
-        pre_number = range(91,101)
-    
-    
-    predict_number = pre_number[0] #Присвоим искомому числу первую цифру списка
-    
-    
-    while True: #Запускаем цикл поиска
-        if predict_number != number:
-            predict_number += 1
+def number_guessing(number):
+    left = 1
+    right = 101
+    count = 0
+    while True:
+        count += 1
+        predict = (left+right) // 2  # предполагаемое число
+        if predict == number:
             break
-        else:
-            break
-        
-        
-    print(f"Загаданное число было {predict_number}")
+        elif predict < number:
+            left = predict + 1
+        elif predict > number:
+            right = predict - 1
+    print(f"Загаданное компьютером число {number}, угаданное {predict}")
+    return count  # выход из цикла, если угадали
 
-print(number)
-random_predict (number)
+
+
+def score_game(game_core):
+    """Запускаем игру 1000 раз, чтобы узнать, как быстро игра угадывает число"""
+    count_ls = []
+    np.random.seed(1)  # фиксируем RANDOM SEED, чтобы эксперимент был воспроизводим!
+    random_array = np.random.randint(1, 101, size=1000)
+    for number in random_array:
+        count_ls.append(game_core(number))
+    score = np.mean(count_ls)
+    print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
+    return score
+
+score_game(number_guessing)
